@@ -1,0 +1,4 @@
+New-NetNat -Name "WG-NAT" -InternalIPInterfaceAddressPrefix 10.8.0.0/24
+Set-NetConnectionProfile -InterfaceAlias "WGL-home" -NetworkCategory Private
+
+对比Windows，Linux只要打开ipv4转发就能解决大部分问题。
